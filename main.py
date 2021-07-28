@@ -107,7 +107,7 @@ class Network:
 
 my_network =Network(r"C:\Users\kudre\Desktop\mavhine_try_data\train.csv", r"C:\Users\kudre\Desktop\mavhine_try_data\test.csv")
 
-while i<42 :
+while my_network.losses<70 :
     my_network.train()
     if my_network.accuracy==1:
         i=i+1
