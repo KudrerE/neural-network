@@ -106,8 +106,9 @@ class Network:
         self.validate()
 
 my_network =Network(r"C:\Users\kudre\Desktop\mavhine_try_data\train.csv", r"C:\Users\kudre\Desktop\mavhine_try_data\test.csv")
+my_network.train()
 
-while my_network.losses<70 :
+while my_network.losses>60 :
     my_network.train()
     if my_network.accuracy==1:
         i=i+1
